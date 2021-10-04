@@ -50,7 +50,6 @@ extension CategoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let categoryCell = categoryTableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as? CategoryTableViewCell else {  fatalError() }
         categoryCell.category.image = UIImage(named: categoryList[indexPath.item])
-        
         return categoryCell
     }
     
